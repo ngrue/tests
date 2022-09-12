@@ -1,0 +1,183 @@
+<style type="text/css">
+    .arbolevel {
+		height: 7em;
+		text-align: center;
+	}
+	.arbolevel > div {
+		display: inline-block;
+		position: relative;
+		height: 6em;
+		width: 12em;
+		margin: auto;
+		background: #f5f5f5;
+		border: white 2px solid;
+	}
+	.arbolevel > div.arbocell {
+		text-align: center;
+		border: gray 2px solid;
+	}
+	.arbolinkbtn {
+		width: 2em;
+		height: 2em;
+		background: lightgray;
+		color: black;
+		text-align: center;
+		position:absolute;
+		opacity:.2;
+		border-radius:1em;
+	}
+	.arbolevel > div:hover .arbolinkbtn {
+		opacity:1;
+	}
+	.arbolinkbtn.on {
+		background: black;
+		color: white;
+	}
+	.arbolinkbtn.left {
+		left:0;
+		bottom:1.5em;
+	}
+	.arbolinkbtn.right {
+		right:0;
+		bottom:1.5em;
+	}
+	.arbolinkbtn.down {
+		left:calc(50% - 1em);
+		bottom:0;
+	}
+	.arbolinkbtn.left::before {
+		content:"<";
+	}
+	.arbolinkbtn.right::before {
+		content:">";
+	}
+	.arbolinkbtn.down::before {
+		content:"V";
+	}
+	.arbochoosebtn {
+		width: 2em;
+		height: 2em;
+		background: lightgray;
+		color: black;
+		text-align: center;
+		position:absolute;
+		opacity:.2;
+		border-radius:2px;
+	}
+	.arbolevel > div:hover .arbochoosebtn {
+		opacity:1;
+	}
+	.arbochoosebtn.config {
+		top:0;
+		right:2em;
+	}
+	.arbochoosebtn.delete {
+		top:0;
+		right:0em;
+	}
+</style>
+<div class="arbolevel"> 
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down on"></button>
+	</div>
+</div>
+<div class="arbolevel"> 
+	<div class="">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right on"></button>
+		<button class="arbolinkbtn down on"></button>
+	</div>
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+</div>
+<div class="arbolevel"> 
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+	<div class="">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left on"></button>
+		<button class="arbolinkbtn right on"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+	<div class="arbocell">&nbsp;
+		<button class="arbochoosebtn config">
+			<svg class="lexicon-icon lexicon-icon-cog" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/admin-theme/images/clay/icons.svg#cog"></use></svg>
+		</button>
+		<button class="arbochoosebtn delete">
+			<svg class="lexicon-icon lexicon-icon-times" role="presentation" viewBox="0 0 512 512"><use xlink:href="/o/classic-theme/images/clay/icons.svg#times"></use></svg>
+		</button>
+		<button class="arbolinkbtn left"></button>
+		<button class="arbolinkbtn right"></button>
+		<button class="arbolinkbtn down"></button>
+	</div>
+</div>
